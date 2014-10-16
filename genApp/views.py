@@ -2,7 +2,7 @@ __author__ = 'yansong'
 
 from genApp import app
 from flask import render_template
-# import genApp.genlib.formModules.statePIT as Pit
+import genApp.genlib.formModules.statePIT as Pit
 from string import Template
 
 
@@ -13,10 +13,10 @@ def start():
             'testOther': 'test second',
             'testNone': None}
     print(Template('${nickname} is ${testOther} project').substitute(user))
-    # obj = Pit.GeneratePIT({'a': 'a word',
-    #                        'b': None,
-    #                        'formName': 'FCA941',
-    #                        'd': [1, 2, 3, 4]})
+    obj = Pit.GeneratePIT({'a': 'a word',
+                           'b': None,
+                           'formName': 'FCA941',
+                           'd': [1, 2, 3, 4]})
     # obj.write_regular()
     return render_template('index.html',
                            title='home',
