@@ -1,0 +1,16 @@
+{
+    "SourceTemplate":{
+        "SrcDir":"C:\\Users\\yansong\\Desktop\\source_template\\",
+        "DesDir":"C:\\Users\\yansong\\Desktop\\destFolder\\",
+        "Regular":"template.cs",
+        "Method":"template.method.cs",
+        "Properties":"template.properties.cs",
+        "DAO":"templateDAO.cs",
+        "DAOMethod":"templateDAO.method.cs"
+    },
+    "FileExtension":{
+
+    },
+    "FormType":{},
+    "TaxProperties":{}
+}
