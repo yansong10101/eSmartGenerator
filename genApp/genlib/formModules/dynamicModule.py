@@ -43,9 +43,9 @@ def get_access_template(name, attribute, data_type):
             }
         }
         '''
-    return Template(template)%{'name': name,
+    return Template(template).substitute({'name': name,
                                'attributes': attribute,
-                               'datatype': data_type}
+                               'datatype': data_type})
 
 
 # return private data member, example: 'm_d_DataMember'
