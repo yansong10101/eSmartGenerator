@@ -17,7 +17,11 @@ def start():
                            'b': None,
                            'formName': 'FCA941',
                            'd': [1, 2, 3, 4]})
-    # obj.write_regular()
+    obj.write_regular()
+    obj.write_method()
+    obj.write_properties()
+    obj.write_dao()
+    obj.write_dao_method()
     return render_template('index.html',
                            title='home',
                            user=user)
