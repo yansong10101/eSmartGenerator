@@ -17,15 +17,11 @@ def start():
                            'b': None,
                            'formName': 'FCA941',
                            'd': [1, 2, 3, 4]})
-<<<<<<< HEAD
-    # obj.write_regular()
-=======
     obj.write_regular()
     obj.write_method()
     obj.write_properties()
     obj.write_dao()
     obj.write_dao_method()
->>>>>>> 9736abbe17848c4222e2842a33bf379a017afe0d
     return render_template('index.html',
                            title='home',
                            user=user)
