@@ -2,16 +2,15 @@ __author__ = 'yansong'
 import genApp.genlib.CommonConstants as Constants
 import os
 import shutil
-from string import Template
 
 
 class GeneratePIT():
 
-    def __init__(self, dictquarter):
-        if dictquarter is not None:
-            self.dictQuarter = dictquarter
-            self.formName = dictquarter['formName']
-            for item in dictquarter.values():
+    def __init__(self, dicts):
+        if dicts is not None:
+            self.dicts = dicts
+            self.formName = dicts['formName']
+            for item in dicts.values():
                 if item is not None:
                     print(item)
 
