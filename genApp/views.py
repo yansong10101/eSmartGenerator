@@ -15,16 +15,18 @@ def start():
             'testOther': 'test second',
             'testNone': None}
     print(Template('${nickname} is ${testOther} project').substitute(user))
-    obj = Pit.GeneratePIT({'a': 'a word',
-                           'b': None,
-                           'formName': 'FCA941',
-                           'd': [1, 2, 3, 4]})
-    obj.write_regular()
+    obj = Pit.GeneratePIT({'formName': 'FCA941',
+                           'attributes': {
+                               'StateTaxWithheld': 'double',
+                                'NumForms': 'int',
+                                'TotalDue': 'double'
+                           }})
+    # obj.write_regular()
     # obj.write_method()
-    # obj.write_properties()
+    obj.write_properties()
     # obj.write_dao()
-    # obj.write_dao_method()
-    arr = DynamicModule.properties_accessories_module({'StateTaxWithheld': 'double',
+    obj.write_dao_method()
+    arr = DynamicModule.dao_method_setup({'StateTaxWithheld': 'double',
                                               'NumForms': 'int',
                                               'TotalDue': 'double'})
     for arr_item in arr:

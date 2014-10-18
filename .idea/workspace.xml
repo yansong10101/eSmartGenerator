@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2399b688-6195-44f2-ab9a-ea5528e7f530" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/genApp/genlib/CommonConstants.py" afterPath="$PROJECT_DIR$/genApp/genlib/CommonConstants.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/genApp/genlib/ConstantConfig.json" afterPath="$PROJECT_DIR$/genApp/genlib/ConstantConfig.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/genApp/genlib/formModules/dynamicModule.py" afterPath="$PROJECT_DIR$/genApp/genlib/formModules/dynamicModule.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/genApp/templates/index.html" afterPath="$PROJECT_DIR$/genApp/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/genApp/genlib/formModules/statePIT.py" afterPath="$PROJECT_DIR$/genApp/genlib/formModules/statePIT.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/genApp/views.py" afterPath="$PROJECT_DIR$/genApp/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -20,7 +17,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/eSmartGenerator$eSmartGenerator.coverage" NAME="eSmartGenerator Coverage Results" MODIFIED="1413669483080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/eSmartGenerator$eSmartGenerator.coverage" NAME="eSmartGenerator Coverage Results" MODIFIED="1413675156450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -36,8 +33,8 @@
             <file leaf-file-name="ConstantConfig.json" pinned="false" current="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/genApp/genlib/ConstantConfig.json">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="663">
-                    <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+                  <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="663">
+                    <caret line="3" column="59" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="59" />
                     <folding />
                   </state>
                 </provider>
@@ -46,8 +43,8 @@
             <file leaf-file-name="CommonConstants.py" pinned="false" current="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/genApp/genlib/CommonConstants.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.60714287" vertical-offset="561" max-vertical-offset="1479">
-                    <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+                  <state vertical-scroll-proportion="0.81897813" vertical-offset="561" max-vertical-offset="1479">
+                    <caret line="67" column="23" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="23" />
                     <folding />
                   </state>
                 </provider>
@@ -67,8 +64,8 @@
       <file leaf-file-name="statePIT.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/genApp/genlib/formModules/statePIT.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1853">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1870">
+              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
               <folding>
                 <element signature="e#23#72#0" expanded="true" />
               </folding>
@@ -79,8 +76,8 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/genApp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="850">
-              <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="884">
+              <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
               <folding>
                 <element signature="e#24#46#0" expanded="true" />
               </folding>
@@ -91,8 +88,8 @@
       <file leaf-file-name="dynamicModule.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/genApp/genlib/formModules/dynamicModule.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1737226" vertical-offset="1576" max-vertical-offset="4097">
-              <caret line="140" column="14" selection-start-line="140" selection-start-column="14" selection-end-line="140" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.19298245" vertical-offset="1500" max-vertical-offset="4386">
+              <caret line="96" column="39" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="39" />
               <folding>
                 <element signature="e#23#72#0" expanded="true" />
               </folding>
@@ -128,10 +125,10 @@
         <option value="$PROJECT_DIR$/genApp/genlib/formModules/__init__.py" />
         <option value="$PROJECT_DIR$/genApp/genlib/GeneratorUtils.py" />
         <option value="$PROJECT_DIR$/genApp/templates/index.html" />
-        <option value="$PROJECT_DIR$/genApp/genlib/formModules/statePIT.py" />
         <option value="$PROJECT_DIR$/genApp/genlib/ConstantConfig.json" />
         <option value="$PROJECT_DIR$/genApp/genlib/CommonConstants.py" />
         <option value="$PROJECT_DIR$/genApp/views.py" />
+        <option value="$PROJECT_DIR$/genApp/genlib/formModules/statePIT.py" />
         <option value="$PROJECT_DIR$/genApp/genlib/formModules/dynamicModule.py" />
       </list>
     </option>
@@ -522,7 +519,11 @@
       <created>1413654077221</created>
       <updated>1413654077221</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="10-18-2014 3">
+      <created>1413669750369</created>
+      <updated>1413669750369</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -549,6 +550,7 @@
     <frame x="503" y="0" width="1101" height="870" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3272472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3272472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3272472" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -558,13 +560,12 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26086956" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25983146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32022473" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -950,44 +951,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/genApp/genlib/ConstantConfig.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="663">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="663">
+          <caret line="3" column="59" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/genApp/genlib/CommonConstants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60714287" vertical-offset="561" max-vertical-offset="1479">
-          <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.81897813" vertical-offset="561" max-vertical-offset="1479">
+          <caret line="67" column="23" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/genApp/genlib/formModules/statePIT.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1853">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#23#72#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/genApp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="850">
-          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="884">
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
           <folding>
             <element signature="e#24#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/genApp/genlib/formModules/statePIT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1870">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding>
+            <element signature="e#23#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/genApp/genlib/formModules/dynamicModule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1737226" vertical-offset="1576" max-vertical-offset="4097">
-          <caret line="140" column="14" selection-start-line="140" selection-start-column="14" selection-end-line="140" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.19298245" vertical-offset="1500" max-vertical-offset="4386">
+          <caret line="96" column="39" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="39" />
           <folding>
             <element signature="e#23#72#0" expanded="true" />
           </folding>
