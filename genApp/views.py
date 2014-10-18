@@ -17,6 +17,10 @@ def start():
                            'b': None,
                            'formName': 'FCA941',
                            'd': [1, 2, 3, 4]})
+<<<<<<< HEAD
+=======
+    # obj.write_regular()
+>>>>>>> c8d3d49c3e14c56bf30a485554e879a1fb2daa25
     obj.write_regular()
     obj.write_method()
     obj.write_properties()
