@@ -12,5 +12,13 @@
 
     },
     "FormType":{},
-    "TaxProperties":{}
+    "TaxProperties":{},
+    "DAOTemplate":{
+        "insert_field":".Append(\",\").Append(${field_name})",
+        "insert_value":".Append(\",@\").Append(${field_name})",
+        "update_field":".Append(\",\").Append(${field_name}).Append(\"=@\").Append(${field_name})",
+        "fill_template":"o${formName}.${property} = DbUtils.To${dataType}(dr[${field_name}]);",
+        "save_template":"eSmartdb.AddInParameter(_SqlCommand, ${field_name}, DbType.${dataType}, DbUtils.ToDB(o${formName}.${property}));",
+        "setup_template":"eSmartdb.AddInParameter(oSqlCommand, ${field_name}, DbType.${dataType}, ${field_name}, DataRowVersion.Current);"
+    }
 }
