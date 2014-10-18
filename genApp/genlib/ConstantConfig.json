@@ -8,9 +8,7 @@
         "DAO":"templateDAO.cs",
         "DAOMethod":"templateDAO.method.cs"
     },
-    "FileExtension":{
-
-    },
+    "FileExtension":{},
     "FormType":{},
     "TaxProperties":{},
     "DAOTemplate":{

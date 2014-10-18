@@ -69,7 +69,3 @@ TAX_PROPERTIES_TOTAL_WAGE = 'TotalWage'
 TAX_PROPERTIES_TAX_WITHHELD = 'TaxWithheld'
 TAX_PROPERTIES_REMITTED = 'Remitted'
 TAX_PROPERTIES_UI_TAX_RATE = 'UITaxRate'
-
-
-def pass_json_to_dict():
-    return
