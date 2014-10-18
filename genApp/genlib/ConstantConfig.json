@@ -11,6 +11,7 @@
     "FileExtension":{},
     "FormType":{},
     "TaxProperties":{},
+    "PropTemplate":{},
     "DAOTemplate":{
         "insert_field":".Append(\",\").Append(${field_name})",
         "insert_value":".Append(\",@\").Append(${field_name})",
@@ -18,5 +19,16 @@
         "fill_template":"o${formName}.${property} = DbUtils.To${dataType}(dr[${field_name}]);",
         "save_template":"eSmartdb.AddInParameter(_SqlCommand, ${field_name}, DbType.${dataType}, DbUtils.ToDB(o${formName}.${property}));",
         "setup_template":"eSmartdb.AddInParameter(oSqlCommand, ${field_name}, DbType.${dataType}, ${field_name}, DataRowVersion.Current);"
+    },
+    "DynamicBlockName":{
+        "PropertiesPrivate": "dynamic_module_data_member",
+        "PropertiesAccess": "dynamic_module_access",
+        "DAOPublicConst": "dynamic_module_dao_const",
+        "DAOInsertField": "dynamic_module_insert_field",
+        "DAOInsertValue": "dynamic_module_insert_value",
+        "DAOUpdate": "dynamic_module_update",
+        "DAOFill": "dynamic_module_fill",
+        "DAOSave": "dynamic_module_save",
+        "DAOSetup": "dynamic_module_setup"
     }
 }

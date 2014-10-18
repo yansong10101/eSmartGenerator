@@ -18,6 +18,7 @@ def get_type_char(data_type):
 # get initial value by passed in data type
 def get_type_init(data_type):
     return {'double': '0.00',
+            'int': '0',
             'string': 'string.Empty',
             'DateTime': 'DateTime.MinValue',
             'bool': 'false',
@@ -49,7 +50,7 @@ def get_access_template(name, attribute, data_type):
         }
         '''
     return Template(template).substitute({'name': name,
-                                         'attributes': attribute,
+                                         'attribute': attribute,
                                          'datatype': data_type})
 
 
@@ -80,6 +81,7 @@ def get_att_combination(privilege, data_type, attribute, init_val, is_const):
 
 def get_database_field(name):
     return '"{0}"'.format(name)
+
 
 # ================================ for .properties.cs ==========================
 # generate code for '.properties.cs' private initial module
@@ -115,6 +117,8 @@ def properties_accessories_module(dicts):
     return access_block
 # ==============================================================================
 
+
+# ================================ for dao.method.cs ===========================
 # generate DAO.method.cs file public const str for database fields
 def dao_method_public(dicts):
     if dicts is None:
@@ -131,7 +135,6 @@ def dao_method_public(dicts):
     return dao_public_block
 
 
-# ================================ for dao.method.cs ===========================
 # generate dao.method.cs file sql_insert_field function template
 def dao_method_sql_insert_field(dicts):
     if dicts is None:
