@@ -4,8 +4,6 @@ from genApp import app
 from flask import render_template
 import genApp.genlib.formModules.statePIT as Pit
 from string import Template
-# TEST DYNAMIC MODULE
-import genApp.genlib.formModules.dynamicModule as DynamicModule
 
 
 @app.route('/')
@@ -18,19 +16,16 @@ def start():
     obj = Pit.GeneratePIT({'formName': 'FCA941',
                            'attributes': {
                                'StateTaxWithheld': 'double',
-                                'NumForms': 'int',
-                                'TotalDue': 'double'
+                               'NumForms': 'int',
+                               'TotalDue': 'double',
+                               'NameControl': 'string'
                            }})
     # obj.write_regular()
     # obj.write_method()
     obj.write_properties()
     # obj.write_dao()
     obj.write_dao_method()
-    arr = DynamicModule.dao_method_setup({'StateTaxWithheld': 'double',
-                                              'NumForms': 'int',
-                                              'TotalDue': 'double'})
-    for arr_item in arr:
-        print(arr_item)
+
     return render_template('index.html',
                            title='home',
                            user=user)
