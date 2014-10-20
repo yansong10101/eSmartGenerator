@@ -20,6 +20,9 @@
         "save_template":"eSmartdb.AddInParameter(_SqlCommand, ${field_name}, DbType.${dataType}, DbUtils.ToDB(o${formName}.${property}));",
         "setup_template":"eSmartdb.AddInParameter(oSqlCommand, ${field_name}, DbType.${dataType}, ${field_name}, DataRowVersion.Current);"
     },
+    "WebPageTemplate": {
+        "GenerateFront": "<tr><td><strong>${number}<\/strong><\/td><td>${description}<\/td><td><eSmartControl:eSmartTextBox ID=\"${att_id}\" runat=\"server\" Enabled=\"${IsEnabled}\" ${IsAmount} \/><\/td><\/tr>"
+    },
     "DynamicBlockName":{
         "PropertiesPrivate": "dynamic_module_data_member",
         "PropertiesAccess": "dynamic_module_access",
