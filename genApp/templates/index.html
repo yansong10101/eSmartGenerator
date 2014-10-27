@@ -1,49 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head lang="en">
     <meta charset="UTF-8">
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}"></script>
     <script>window.jQuery || document.write('<script src="{{ url_for('static', filename='js/jquery.js') }}">\x3C/script>')</script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>eSmart Code Generator</title>
 </head>
 <body>
 
-    <a href="/pit">go to state PIT page</a>
+    <h1>State Form code generator</h1>
 
+    <div id="linkBtn">
+        <a href="#"  onclick="printForm()">print object</a>
+        &nbsp&nbsp&nbsp&nbsp&nbsp
+        <a href=# id=genfile>generate files</a>
+    </div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
     <script>
-        var rowNum = 0;
-        var taxForm = {};
-        function addRow(frm) {
-            rowNum++;
-            var row = '<tr id="rowNum' + rowNum + '"> ' +
-                      '<td name="name[]" >' + frm.property.value + '</td> ' +
-                      '<td name="qty[]" >' + frm.datatype.value + '</td> ' +
-                      '<td><input type="button" value="Remove" onclick="removeRow(' + rowNum + ');"><td></tr>';
-            $('#tb').append(row);
-
-            taxForm[frm.property.value] = frm.datatype.value;
-            console.log(taxForm);
-
-            frm.datatype.value = '';
-            frm.property.value = '';
-        }
-
-        function removeRow(rnum) {
-            var row_id = '#rowNum' + rnum;
-            $(row_id).remove();
-        }
-
-        function printForm() {
-            console.log('print object contents ...');
-            console.log(taxForm);
-        }
-
         $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
         $(function() {
             $('#genfile').bind('click', function() {
-                $.getJSON($SCRIPT_ROOT + '/temp_json', taxForm, function(data)
-                {
-                    $("#flag").text(data.flag);
+                var formName = $('#formName').val();
+                var formType = $('input:radio[name=formType]:checked').val();
+                if(formName == '' || formName == null) {
+                    alert('form name is required');
+                    return;
+                }
+                formAtt['formName'] = formName;
+                formAtt['formType'] = formType;
+                $.ajax({
+                    type: "GET",
+                    url: $SCRIPT_ROOT + '/temp_json',
+                    data: formAtt,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (msg) {
+                       //do something
+                    },
+                    error: function (errormessage) {
+                        //do something else
+                    }
                 });
                 return false;
             });
@@ -51,17 +49,24 @@
     </script>
 
     <form method="post">
-        <input type="text" name="form name" required>
+        <input type="radio" name="formType" value="PIT" checked>PIT &nbsp
+        <input type="radio" name="formType" value="UI">UI &nbsp
+        <input type="text" id="formName" name="form name" placeholder="Form name">
         <div id="itemRows">
-            <input onclick="addRow(this.form);" type="button" value="Add row" /> <br>
-            <input type="text" name="property" placeholder="property name"/> <input type="text" name="datatype" placeholder="data type"/>
+            <input type="text" name="property" placeholder="property name"/>
+            <select name="datatype">
+                <option value="">--select data type--</option>
+                <option>bool</option>
+                <option>DateTime</option>
+                <option>double</option>
+                <option>int</option>
+                <option>string</option>
+            </select>
+            <input onclick="addRow(this.form);" type="button" value="Add row" />
         </div>
     </form>
 
-    <a href="#"  onclick="printForm()">print object</a>
-     -- <a href=# id=genfile>generate files</a>
-
-    <table id="tb" border="true">
+    <table id="tb" data-role="table" class="ui-responsive" border="1">
         <tr id="tr_head">
             <td>property name</td>
             <td>data type</td>

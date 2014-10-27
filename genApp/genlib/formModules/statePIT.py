@@ -104,10 +104,10 @@ class GeneratePIT():
                           Constants.DYNAMIC_BLOCK_DAO_SETUP: insert_setup_block}
         file_regular.write(Template(file_source).substitute(position_point))
         print('finish generating' + self.formName + 'DAO.method.cs file')
-        # test_str = Constants.json_data['WebPageTemplate']['GenerateFront']
-        # test_print = Template(test_str).substitute({'number': '8',
-        #                                             'att_id': 'txt_TotalDue',
-        #                                             'description': 'test form',
-        #                                             'IsEnabled': 'true',
-        #                                             'IsAmount': 'CssClass=\"amount\"'})
-        # print(test_print)
+
+    def write_all(self):
+        self.write_regular()
+        self.write_method()
+        self.write_properties()
+        self.write_dao()
+        self.write_dao_method()
